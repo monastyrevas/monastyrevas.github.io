@@ -9,7 +9,24 @@ section > * {
 }
 
 :root{
-    --main-blue-color: #013BA7
+    --main-blue-color: #013BA7;
+    --bio-vis-100: #C30938;
+    --bio-zlak-100: #90BC2A;
+    --bio-klmal-100: #E31071;
+    --bio-pers-100: #F59E11;
+    --bio-cher-100: #393083;
+    --bio-yabkor-100: #B85303;
+    --ryaz-02: #FAB700;
+    --sm-10-02: #0A94D3;
+    --sm-15-04-02: #0C7F48;
+    --sm-20-04-02: #C30938;
+    --kef-25-05: #006289;
+    --mol-25-09: #87C700;
+    --mol-25-1: #C0C601;
+    --mol-32-1: #007565;
+    --mol-32-09: #013BA7;
+    --sm-15-05: #006C4A;
+    --snej-05: #7479CA;
 }
 
 body {
@@ -252,7 +269,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: var(--main-blue-color);
-
+    padding-top: 2vw;
 }
 
 .block-pic .text-center {
@@ -260,8 +277,8 @@ body {
     width: 48vw;
     text-align: center;
     padding: 1.5vh 5vh;
-    background-color: rgba(1, 59, 167, .5); 
-    color: #fff;
+    background-color: rgba(255, 255, 255, .7); 
+    color: #013ba7;
     border-radius: 3vh;
     margin-bottom: 5vh;
 }
@@ -269,13 +286,14 @@ body {
 /* Popular card prod*/
 
 .con-pop-cards {
-    border: 1px solid red;
     width: 80vw;
     height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 2vw;
 }
 
 .pop-card {
@@ -299,4 +317,92 @@ body {
 	-ms-transform: skewX(-15deg); 
 	-o-transform: skewX(-15deg); 
 	transform: skewX(-15deg);
+}
+
+.container-prod {
+    width: 77vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(1, 59, 167, .7);
+    border-radius: 2vw;
+    /* padding-left: 10vw; */
+}
+
+.container-prod .card-hover {
+    margin: 1vw;
+    width: 20vw;
+    height: 50vh;
+    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
+    /* -webkit-transform: skewX(-15deg); 
+	-moz-transform: skewX(-15deg); 
+	-ms-transform: skewX(-15deg); 
+	-o-transform: skewX(-15deg); 
+	transform: skewX(-15deg); */
+    background-color: red;
+    border-radius: 2vw;
+    transition: all .75s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-prod .card-hover p {
+    opacity: .7;
+    background-color: #fff;
+    padding: 2vw;
+    font-size: 3vh;
+    border-radius: 2vw;
+    transition: all .5s ease-in-out;
+}
+
+.container-prod .card-hover .des-hide {
+    transform: translateY(200%);
+    border-radius: 1vw;
+    width: 20vw;
+    background-color: #fff;
+    padding: .5vw;
+    transition: all .75s ease-in-out;
+}
+
+.container-prod .card-hover:hover .des-hide {
+    transform: translateY(0%);
+}
+
+.container-prod .card-hover:hover p {
+    opacity: 1;
+}
+
+.container-prod .card-hover:hover {
+    width: 30vw;
+}
+
+.img-maslo {
+    background: url("./img/maslo.JPG");
+    background-size:  auto 26vw ;
+    background-position: -10vw;
+}
+.img-maslo:hover {
+    background-position: -3vw;
+}
+
+.img-mol {
+    background-image: url();
+    background: url("./img/mol.JPG");
+    background-size: auto 100%;
+    background-position-x: -2vw;
+}
+
+.img-sm {
+    background: url("./img/smetana.JPG");
+    background-size: auto 26vw;
+    background-position-x: -10vw;
+}
+
+.img-sm:hover {
+    background-position-x: -5vw;
 }
