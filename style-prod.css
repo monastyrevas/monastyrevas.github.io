@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+content > * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    --main-blue-color: #013BA7;
+    --bio-vis-100: #C30938;
+    --bio-zlak-100: #90BC2A;
+    --bio-klmal-100: #E31071;
+    --bio-pers-100: #F59E11;
+    --bio-cher-100: #393083;
+    --bio-yabkor-100: #B85303;
+    --ryaz-02: #FAB700;
+    --sm-10-02: #0A94D3;
+    --sm-15-04-02: #0C7F48;
+    --sm-20-04-02: #C30938;
+    --kef-25-05: #006289;
+    --mol-25-09: #87C700;
+    --mol-25-1: #C0C601;
+    --mol-32-1: #007565;
+    --mol-32-09: #013BA7;
+    --sm-15-05: #006C4A;
+    --snej-05: #7479CA;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    background-image: url("./img/trava/1-trav.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-stmk {
+    display: block;
+    position: fixed;
+    height: 10vh;
+    overflow: hidden;
+    left: 1vw;
+    top: 2vh;
+    z-index: 100;
+    background: #fff;
+    border-radius: 6vh;
+    padding: 1vh;   
+    box-shadow: 0 0 1vh 1vh rgba(1, 59, 167, .5);
+}
+
+.logo-stmk img {
+    height: 9vh;
+}
+
+
+.group-nav {
+    top: 0;
+    position: fixed;
+    display: flex;
+    left: 14vw;
+    width: 70vw;
+    padding: 1vh;
+    height: 7vh;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0vh 3vw 0vh 3vw;
+    z-index: 1000;
+}
+
+.nav-item {
+    cursor: pointer;
+    border: .25vw solid var(--main-blue-color);
+    background: rgba(1, 59, 167, .5);
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skewX(-15deg); 
+	-moz-transform: skewX(-15deg); 
+	-ms-transform: skewX(-15deg); 
+	-o-transform: skewX(-15deg); 
+	transform: skewX(-15deg); 
+    transition: all .5s ease-in-out;
+    font-size: 2.75vh; 
+}
+
+.nav-item a {
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.nav-item:nth-child(2){
+    border-left: 0;
+    border-right: 0;
+}
+
+.nav-item:hover{
+    /* scale: 1.1; */
+    width: 22vw;
+    background-color: #fff;
+    color: rgba(1, 59, 167, .5);
+}
+
+.nav-item:hover a {
+    color: #013ba7;
+}
+
+.nav-item > * {
+    -webkit-transform: skewX(15deg); 
+	-moz-transform: skewX(15deg); 
+	-ms-transform: skewX(15deg); 
+	-o-transform: skewX(15deg); 
+	transform: skewX(15deg); 
+}
+/* Code page */
+
+.content {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 3vw;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+}
+
+.group-nav-prod {
+    position: fixed;
+    left: 0;
+    top: 30vh;
+    width: 10vw;
+}
+
+.nav-prod-item {
+    width: 10vw;
+    height: 8vh;
+    font-size: 2.7vh;
+    text-align: center;
+    cursor: pointer;
+    border-top-right-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+    transition: all .4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-prod-item:hover {
+    transform: scale(1.2);
+    width: 13vw;
+}
+
+.nav-prod-item a {
+    color: #fff;
+}
+
+.nav-prod-item.mol {
+    background: var(--mol-25-09);
+}
+.nav-prod-item.smet {
+    background: var(--sm-20-04-02);
+}
+.nav-prod-item.bio {
+    background: var(--bio-pers-100);
+}
+.nav-prod-item.kmol{
+    background: var(--kef-25-05);
+}
+.nav-prod-item.massyr{
+    background: var(--mol-25-1);
+}
+.nav-prod-item.tvor {
+    background: var(--kef-25-05);
+}
