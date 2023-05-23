@@ -126,18 +126,6 @@ body {
 }
 /* Code page */
 
-.content {
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    min-height: 80vh;
-    background-color: rgba(255, 255, 255, .8);
-    border-radius: 3vw;
-    margin-bottom: 5vh;
-    margin-left: 5vw;
-}
-
 .group-nav-prod {
     position: fixed;
     left: 0;
@@ -185,4 +173,87 @@ body {
 }
 .nav-prod-item.tvor {
     background: var(--kef-25-05);
+}
+
+.content {
+    padding: 5vh 0;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    min-height: 80vh;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 3vw;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+    border: .75vh solid #fff;
+}
+
+.section-prod {
+    width: 80vw;
+}
+
+.p-head-sec {
+    background-color: var(--mol-25-09);
+    width: 80vw;
+    height: 12vh;
+    font-size: 9vh;
+    color: #fff;
+    text-align: center;
+}
+
+.prod-items-container {
+    padding: 2.5% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod-item {
+    width: 20vw;
+    height: 42vh;
+    padding: 1vw .5vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bio-zlak-100);
+    border-radius: 2vw;
+    color: #fff;
+    overflow: hidden;
+    transition: all .75s ease-in-out; 
+}
+
+.prod-item:hover .des {
+    transform: translateY(-130%);
+}
+
+.prod-item:hover .item-head {
+    transform: translateY(-290%);
+    background-color: var(--bio-zlak-100);
+    color: #fff;
+    opacity: .9;
+}
+
+.item-head {
+    background-color: #fff;
+    color: var(--bio-zlak-100);
+    /* background-color: #ff0059; */
+    border: .3vh solid #fff;
+    padding: 1vw;
+    border-radius: 2vw;
+    transition: all .75s ease-in-out; 
+}
+
+.des {
+    background-color: #fff;
+    color: var(--bio-zlak-100);
+    border: .2vw solid var(--bio-zlak-100);
+    width: 17vw;
+    padding: .7vw;
+    border-radius: 1vw;
+    transition: all .75s ease-in-out; 
+}
+
+.item-img {
+    width: 15vw;
+    border-radius: 7.5vw;
 }
