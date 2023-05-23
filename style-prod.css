@@ -236,7 +236,6 @@ body {
 .item-head {
     background-color: #fff;
     color: var(--bio-zlak-100);
-    /* background-color: #ff0059; */
     border: .3vh solid #fff;
     padding: 1vw;
     border-radius: 2vw;
