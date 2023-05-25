@@ -245,12 +245,12 @@ body {
 }
 
 .prod-item.rigth:hover .des {
-    transform: translateX(18vw) translateY(-48.5vh);
+    transform: translateX(18vw) translateY(-8.5vh);
     border-radius: 0vw 1vw 1vw 0vw;
 }
 
 .prod-item.left:hover .des {
-    transform: translateX(-18vw) translateY(-48.5vh);
+    transform: translateX(-18vw) translateY(-8.5vh);
     border-radius: 1vw 0vw 0vw 1vw;
 }
 
@@ -290,7 +290,7 @@ body {
 
 .des {
     position: absolute;
-    top: 12.9vh;
+    /* top: 12.9vh; */
     background-color: #fff;
     color: var(--bio-zlak-100);
     /* border: .2vw solid var(--bio-zlak-100); */
