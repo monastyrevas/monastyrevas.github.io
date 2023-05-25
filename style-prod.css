@@ -202,6 +202,7 @@ body {
     font-size: 9vh;
     color: #fff;
     text-align: center;
+    margin-bottom: 3vh;
 }
 
 .prod-items-container {
@@ -236,22 +237,24 @@ body {
     overflow: visible;
 }
 
-.prod-item:hover .des {
+.prod-item.rigth:hover .des {
+    transform: translateX(18vw) translateY(-8.5vh);
+    border-radius: 0vw 1vw 1vw 0vw;
+    color: var(--bio-zlak-100);
     opacity: 1;
-    transform: translateX(18vw) translateY(0vh);
     width: 17vw;
     height: 20vh;
     font-size: 3vh;
 }
 
-.prod-item.rigth:hover .des {
-    transform: translateX(18vw) translateY(-8.5vh);
-    border-radius: 0vw 1vw 1vw 0vw;
-}
-
 .prod-item.left:hover .des {
     transform: translateX(-18vw) translateY(-8.5vh);
     border-radius: 1vw 0vw 0vw 1vw;
+    color: var(--bio-zlak-100);
+    opacity: 1;
+    width: 17vw;
+    height: 20vh;
+    font-size: 3vh;
 }
 
 .prod-item.rigth:hover .item-img {
@@ -295,6 +298,7 @@ body {
     color: var(--bio-zlak-100);
     /* border: .2vw solid var(--bio-zlak-100); */
     border-left: 1px solid #fff;
+    z-index: 100;
     width: 0;
     height: 0;
     padding: .7vw;
