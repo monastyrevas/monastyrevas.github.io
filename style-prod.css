@@ -195,8 +195,15 @@ body {
     width: 80vw;
 }
 
-.p-head-sec {
+#moloko {
     background-color: var(--mol-25-09);
+}
+
+#smetana {
+    background-color: var(--sm-20-04-02);
+}
+
+.p-head-sec {
     width: 80vw;
     height: 12vh;
     font-size: 9vh;
