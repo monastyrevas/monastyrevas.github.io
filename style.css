@@ -373,7 +373,7 @@ a {
 }
 
 .container-prod .card-hover .des-hide {
-    transform: translateY(200%);
+    transform: translateY(25vw);
     border-radius: 1vw;
     width: 20vw;
     background-color: #fff;

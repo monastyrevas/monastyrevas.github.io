@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>loader</title>
+</head>
+<body>
+    <img src="../../img/logo.png" class="logo"/>
+    <script>
+        
+        let stripes = () => {
+            let sizeW = Math.random() * 3;
+            let e = document.createElement('div');
+            e.classList.add('lines');
+            e.style.left = Math.random() * innerWidth + "px";
+            e.style.width = 1 + sizeW + "px";
+            e.style.background = 'hsl(' + Math.floor(Math.random()*360) + "deg, 100%, 50%)"
+            document.body.appendChild(e);
+            setTimeout(() => {
+                document.body.removeChild(e);
+            }, 2000);
+        }
+        setInterval(() => {
+            stripes();
+        }, 20);
+        
+    </script>
+</body>
+</html>
