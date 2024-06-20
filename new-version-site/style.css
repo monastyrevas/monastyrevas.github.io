@@ -6,26 +6,27 @@ body{
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 1400px;
     text-align: center;
+    margin: 0 auto;
 }
 
 /* HEADER */
 
 header {
     background-color: blue;
-    max-height: 50px;
+    max-height: 80px;
+    font-size: 30px;
+    text-align: center;
 }
 
-.content {
-}
 .header-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 40px;
+    /* padding: 0 0 0 80px; */
     color: #fff;
-    height: 50px;
+    height: 80px;
 }
 .item-header {
    height: 100%;
@@ -33,28 +34,25 @@ header {
    align-items: stretch;
 }
 .logo img{
-    height: 50px;
-}
-.nav {
+    height: 80px;
 }
 .nav-list {
     display: flex;
+    justify-content: space-between;
     font-weight: 500;
-    font-size: 16px;
     height: 100%;
 }
 .nav-item {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 50px;
     transition: all .5s ease-in-out;
     box-shadow: 0px 0px 0px blue;
 }
 .nav-item:hover {
-    padding: 0px 40px;
+    padding: 0px 100px;
     background-color: #fff;
-    top: 10px;
     box-shadow: 0px 5px 5px blue;
 }
 .nav-item a {
@@ -68,4 +66,5 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    left: auto;
 }
