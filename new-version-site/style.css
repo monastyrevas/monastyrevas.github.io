@@ -1,0 +1,71 @@
+@import "./../reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    font-family: 'Lobster', cursive;
+}
+
+.content {
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: blue;
+    max-height: 50px;
+}
+
+.content {
+}
+.header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: #fff;
+    height: 50px;
+}
+.item-header {
+   height: 100%;
+   display: flex;
+   align-items: stretch;
+}
+.logo img{
+    height: 50px;
+}
+.nav {
+}
+.nav-list {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    height: 100%;
+}
+.nav-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 0px blue;
+}
+.nav-item:hover {
+    padding: 0px 40px;
+    background-color: #fff;
+    top: 10px;
+    box-shadow: 0px 5px 5px blue;
+}
+.nav-item a {
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+.nav-item:hover a {
+    color: blue;
+}
+.contact {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
