@@ -14,7 +14,7 @@ body{
 /* HEADER */
 
 header {
-    background-color: blue;
+    background-color: #0059FF;
     max-height: 80px;
     font-size: 30px;
     text-align: center;
@@ -48,19 +48,38 @@ header {
     align-items: center;
     padding: 0px 50px;
     transition: all .5s ease-in-out;
-    box-shadow: 0px 0px 0px blue;
+    box-shadow: 0px 0px 0px #0059FF;
 }
 .nav-item:hover {
     padding: 0px 100px;
     background-color: #fff;
-    box-shadow: 0px 5px 5px blue;
+    box-shadow: 0px 5px 5px #0059FF;
 }
 .nav-item a {
+    position: relative;
     color: #fff;
     transition: all .5s ease-in-out;
 }
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    /* width: 10%; */
+    height: 10%;
+    top: 2.5rem;
+    left: 10rem;
+    right: 10rem;
+    width: auto;
+    background-color: #0059FF;
+    transition: all .7s ease-in-out;
+}
 .nav-item:hover a {
-    color: blue;
+    color: #0059FF;
+}
+
+.nav-item:hover  a::before {
+    left: 0;
+    right: 0;
 }
 .contact {
     height: 100%;
