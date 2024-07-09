@@ -5,19 +5,22 @@ body{
     font-family: 'Lobster', cursive;
 }
 
+:root{
+    --main-blue-color: #0059FF;
+}
+
 .content {
-    max-width: 1400px;
-    text-align: center;
-    margin: 0 auto;
+    
 }
 
 /* HEADER */
 
 header {
-    background-color: #0059FF;
+    background-color: var(--main-blue-color);
     max-height: 80px;
     font-size: 30px;
     text-align: center;
+    padding: 0 auto;
 }
 
 .header-group {
@@ -54,12 +57,12 @@ header {
     align-items: center;
     padding: 0px 50px;
     transition: all .5s ease-in-out;
-    box-shadow: 0px 0px 0px #0059FF;
+    box-shadow: 0px 0px 0px var(--main-blue-color);
 }
 .nav-item:hover {
     padding: 0px 100px;
     background-color: #fff;
-    box-shadow: 0px 5px 5px #0059FF;
+    box-shadow: 0px 5px 5px var(--main-blue-color);
 }
 .nav-item a {
     position: relative;
@@ -75,11 +78,11 @@ header {
     left: 10rem;
     right: 10rem;
     width: auto;
-    background-color: #0059FF;
+    background-color: var(--main-blue-color);
     transition: all .7s ease-in-out;
 }
 .nav-item:hover a {
-    color: #0059FF;
+    color: var(--main-blue-color);
 }
 
 .nav-item:hover  a::before {
@@ -91,4 +94,124 @@ header {
     display: flex;
     align-items: center;
     left: auto;
+}
+
+
+/* Style for animated CARD */
+
+.container-prod {
+    width: 77vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 89, 255, .7);
+    border-radius: 2vw;
+    /* padding-left: 10vw; */
+}
+
+.container-prod .card-hover {
+    margin: 1vw;
+    width: 20vw;
+    height: 50vh;
+    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2vw;
+    transition: all .75s ease-in-out;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 100px;
+    color: var(--main-blue-color);
+}
+
+.container-prod .card-hover p {
+    background-color: rgba(255, 255, 255, .7);
+    padding: 10px 20px ;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 2vw; 
+    margin-bottom: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.container-prod .card-hover .des-hide {
+    transform: translateY(25vw);
+    border-radius: 1vw;
+    width: 20vw;
+    font-size: 20px;
+    /* color: #000; */
+    /* background-color: #fff; */
+    background-color: var(--main-blue-color);
+    color: #fff;
+    padding: 10px 15px;
+    text-align: justify;
+    transition: all .7s ease-in-out;
+}
+
+.container-prod .card-hover:hover .des-hide {
+    transform: translateY(0%);
+}
+
+.container-prod .card-hover:hover p {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container-prod .card-hover:hover {
+    width: 30vw;
+    padding-top: 20px;
+}
+
+.img-maslo {
+    background: url("../img/maslo.JPG");
+    background-size:  auto 30vw ;
+    background-position: -10vw;
+}
+.img-maslo:hover {
+    background-position: -3vw;
+}
+
+.img-mol {
+    background-image: url();
+    background: url("../img/mol.JPG");
+    background-size: auto 30vw;
+    background-position-x: -3vw;
+}
+
+.img-sm {
+    background: url("../img/smetana.JPG");
+    background-size: auto 30vw;
+    background-position-x: -15vw;
+}
+
+.img-sm:hover {
+    background-position-x: -7vw;
+}
+
+/* Section part thesis */
+.part-thesis {
+    background-image: url('../img/trava/1-trav.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part-thesis h2 {
+    font-size: 8vh;
+    text-align: center;
+    padding: 1.5vh 5vh;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .7); 
+    color: var(--main-blue-color);
+    border-radius: 3vh;
+    margin-bottom: 5vh;
+
 }
