@@ -97,7 +97,7 @@ header {
 }
 
 
-/* Style for animated CARD */
+/* Style for animated old CARDs */
 
 .container-prod {
     width: 77vw;
@@ -214,4 +214,61 @@ header {
     border-radius: 3vh;
     margin-bottom: 5vh;
 
+}
+
+/* NEW Card */
+.group-card {
+    padding: 30px 50px;
+    display: flex;
+    column-gap: 50px;
+    text-align: center;
+    background: rgba(0, 89, 255, .7);
+    border-radius: 30px;
+}
+
+.group-card .card:nth-child(1){
+    background-image: url('../img/maslo.JPG');
+    background-size:  auto 100%;
+    background-position-x: 50%;
+}
+
+.group-card .card:nth-child(2){
+    background-image: url('../img/smetana.JPG');
+    background-size:  auto 100%;
+    background-position-x: 75%;
+}
+
+.group-card .card:hover:nth-child(2){
+    background-position-x: 100%;
+}
+
+
+.group-card .card:nth-child(3){
+    background-image: url('../img/mol.JPG');
+    background-size:  auto 100%;
+    background-position-x: 15%;
+}
+
+
+.group-card .card {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 300px;
+    border-radius: 30px;
+    padding: 150px 30px;
+    justify-content: center;
+    transition: all .7s ease-in-out;
+}
+
+.group-card .card:hover{
+    padding: 150px 150px;
+}
+
+.group-card .card p {
+    display: block;
+    font-size: 24px;
+    width: fit-content;
+    padding: 10px 15px;
+    color: var(--main-blue-color);
+    background-color: #fff;
 }
