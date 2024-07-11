@@ -252,10 +252,12 @@ header {
 
 .group-card .card {
     display: flex;
+    position: relative;
     flex: 1 1 0;
     min-width: 300px;
     border-radius: 30px;
     padding: 150px 30px;
+    
     justify-content: center;
     transition: all .7s ease-in-out;
 }
@@ -266,9 +268,37 @@ header {
 
 .group-card .card p {
     display: block;
+    z-index: 2;
     font-size: 24px;
     width: fit-content;
     padding: 10px 15px;
     color: var(--main-blue-color);
     background-color: #fff;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.group-card .card:hover p {
+    transform: translateY(-100px)
+}
+
+.group-card .card span {
+    position: absolute;
+    top: 90px;
+    z-index: 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    
+    background-color: var(--main-blue-color);
+    color: #fff;
+    border-radius: 15px;
+    width: 320px;
+    height: 50%;
+    transition: all .7s ease-in-out;
+    scale: 0.1;
+}
+
+.group-card .card:hover span{
+    top: 120px;
+    scale: 1;
 }
