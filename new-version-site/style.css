@@ -9,10 +9,6 @@ body{
     --main-blue-color: #0059FF;
 }
 
-.content {
-    
-}
-
 /* HEADER */
 
 header {
@@ -259,7 +255,7 @@ header {
     padding: 150px 30px;
     
     justify-content: center;
-    transition: all .7s ease-in-out;
+    transition: all .5s linear;
 }
 
 .group-card .card:hover{
