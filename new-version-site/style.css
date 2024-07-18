@@ -9,6 +9,26 @@ body{
     --main-blue-color: #0059FF;
 }
 
+.anim-show-trans{
+    transform: translateX(-150%);
+    animation: ani-trans 1s forwards;
+}
+
+.anim-show-op{
+    opacity: 0;
+    animation: ani-op 1s forwards;
+}
+
+@keyframes ani-trans {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes ani-op {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /* HEADER */
 
 header {
@@ -188,11 +208,12 @@ header {
 
 /* Section part thesis */
 .part-thesis {
+    position: relative;
     background-image: url('../img/trava/1-trav.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40px 0;
+    padding: 40px 0 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,7 +276,7 @@ header {
     padding: 150px 30px;
     
     justify-content: center;
-    transition: all .5s linear;
+    transition: all .5s ease-in-out;
 }
 
 .group-card .card:hover{
@@ -297,4 +318,75 @@ header {
 .group-card .card:hover span{
     top: 120px;
     scale: 1;
+}
+
+/* Wave Banner Animated */
+
+.sec-wave {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../img/wave.png');
+    background-size: 1000px 100px;
+}
+
+.wave.wave1 {
+    animation: animwave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.wave.wave2 {
+    animation: animwave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.wave.wave3 {
+    animation: animwave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+.wave.wave4 {
+    animation: animwave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animwave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animwave2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/* Second section */
+.second-sec {
+    height: 100vh;
+    background-color: #fff;
 }
