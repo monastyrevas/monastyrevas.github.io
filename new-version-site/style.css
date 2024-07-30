@@ -520,7 +520,7 @@ header {
 
 .our-clients {
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 0;
     width: 340px;
     font-size: 20px;
@@ -529,4 +529,32 @@ header {
     color: #fff;
     background-color: var(--main-blue-color);
     border-radius: 20px;
+    text-align: center;
+}
+
+.our-clients p {
+    display: inline-block;
+    border: 1px solid red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.our-clients ul {
+    text-align: left;
+}
+
+.our-clients ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.clients-logo {
+    display: inline-block;
+    content: '1';
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 1px solid red;
+    background-color: #fff;
 }
