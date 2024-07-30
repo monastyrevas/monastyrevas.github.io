@@ -395,22 +395,23 @@ header {
 /* Second section */
 .dignity {
     background-color: #fff;
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
     font-size: 20px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
 }
 
 .par1, .par2, .par3 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     /* margin: 50px 0; */
-    width: 500px;
-    height: 300px;
+    width: 400px;
+
     border-radius: 30px;
-    padding: 15px 30px;
+    padding: 150px 30px 50px 30px;
     /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
     /* Объем добавляет */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -431,12 +432,101 @@ header {
 }
 
 .par1>p, .par2>p, .par3>p {
-    border: 1px solid red;
-    text-align: justify;
+    text-align: center;
 }
 
 .par2 {
-    margin: -100px 0 -100px auto;
+    margin: -50px 0 -50px auto;
 }
 
-/* SVG style */
+.par1::before, .par2::before, .par3::before {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+}
+
+.par1::before {
+    content: url("../img/nature_qocrmrw4vdth.svg");
+}
+
+.par2::before {
+    content: url("../img/guarantee_cghbjgaa943h.svg");
+}
+
+.par3::before {
+    content: url("../img/guarantee_cghbjgaa943h.svg");
+}
+
+/* deliveru section*/
+
+.line {
+    height: 20px;
+    width: 100%;
+    background: var(--main-blue-color);
+}
+
+.deliveru-reg {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.deliveru-reg h3 {
+    position: relative;
+    width: fit-content; 
+    text-align: center;
+    margin: 0 auto -10px auto;
+    font-size: 60px;
+    color: var(--main-blue-color);
+}
+.deliveru-reg h3::before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background: var(--main-blue-color);
+}
+
+.map {
+    position: relative;
+    background-image: url('../img/map-stmk.svg');
+    background-size: 100% 100%;
+    /* background-position: 50% 50%; */
+    background-position: right 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    padding-left: 50px;
+}
+
+.exten {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: var(--main-blue-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.our-clients {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 340px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: var(--main-blue-color);
+    border-radius: 20px;
+}
