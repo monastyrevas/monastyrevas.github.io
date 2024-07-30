@@ -549,7 +549,7 @@ header {
 
 .clients-logo {
     display: inline-block;
-    content: '1';
+    content: '';
     width: 40px;
     height: 40px;
     margin-right: 10px;
