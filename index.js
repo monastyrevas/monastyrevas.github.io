@@ -4,4 +4,4 @@ $(document).ready(function(){
       responsiveFallback: 600,
       loop: false
     });
-      });
+      }); dsa
